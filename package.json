@@ -1,20 +1,44 @@
 {
-  "name": "trionology",
-  "version": "1.0.0",
+  "name": "@ahmadomar-amegos/react-ts-js-component-library",
+  "version": "1.0.1",
   "description": "first version on trionology inc components ",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Ahmad Omar",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.3",
+    "@storybook/addon-essentials": "^6.4.3",
+    "@storybook/addon-links": "^6.4.3",
+    "@storybook/builder-webpack5": "^6.4.3",
+    "@storybook/manager-webpack5": "^6.4.3",
+    "@storybook/react": "^6.4.3",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.37",
+    "babel-jest": "^27.4.2",
+    "babel-loader": "^8.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.2",
+    "postcss": "^8.4.4",
     "react": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "rollup": "^2.60.2",
     "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.1",
     "typescript": "^4.5.2"
   },
@@ -23,5 +47,11 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ahmadomar-amegos"
+  },
+  "dependencies": {
+    "react-dom": "^17.0.2"
+  }
 }
